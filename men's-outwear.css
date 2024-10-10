@@ -1,0 +1,106 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.mens-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+p {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.mens-item h2 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.shop-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 12px;
+}
+
+.shop-image-container {
+    margin: 24px 0 8px;
+    width: 100%;
+    position: relative;
+    padding-top: 100%;
+    /* For maintaining aspect ratio */
+}
+
+.shop-image-container img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 13px;
+    color: black;
+}
+
+.price {
+    color: black;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 10px 32px 10px;
+    padding: 0;
+    list-style: none;
+}
+
+
+.grid a {
+    display: block;
+    text-decoration: none;
+}
+
+.grid li {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    .mens-item img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .grid li {
+        flex-basis: 33%;
+        max-width: 33%;
+    }
+
+    .shop-list-item {
+        margin: 0 48px;
+    }
+
+    .title {
+        margin-top: 20%;
+    }
+
+}

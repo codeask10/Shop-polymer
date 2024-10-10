@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/089e44eff7.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <title>Home - Shop</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <ul>
+                <li onclick=showSidebar()> <i class="fa-solid fa-bars menu-button"></i></li>
+                <li><a href="index.html"><span>SHOP</span></li></a>
+                <li><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+        </div>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar() class="cross-bar"><i class="fa-solid fa-xmark"></i></li>
+                <li><a href="men's-outwear.html">Men's Outerwear</a></li>
+                <li><a href="men's-outwear.html">Ladies OuterWear</a></li>
+                <li><a href="men's-outwear.html">Men's T-Shirts</a></li>
+                <li><a href="men's-outwear.html">Ladies T-shirts</a></li>
+            </ul>
+            <ul class="nav-link">
+                <li><a href="men's-outwear.html">Men's Outerwear</a></li>
+                <li><a href="men's-outwear.html">Ladies OuterWear</a></li>
+                <li><a href="men's-outwear.html">Men's T-Shirts</a></li>
+                <li><a href="men's-outwear.html">Ladies T-shirts</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="section">
+        <div class="item">
+            <a href="">
+                <img class="image" src="images/mens_outerwear.jpg" alt="mens_outerwear">
+            </a>
+            <h2>Men's Outwear</h2>
+            <a href=""> <button class="shop-button">Shop Now</button></a>
+        </div>
+
+        <div class="item">
+            <a href="">
+                <img class="image" src="images/ladies_outerwear.jpg" alt="Ladies_outerwear">
+            </a>
+            <h2>Ladies Outwear</h2>
+            <a href=""> <button class="shop-button">Shop Now</button></a>
+        </div>
+        <div class="items">
+            <div class="item">
+                <a href="">
+                    <img class="image" src="images/mens_tshirts.jpg" alt="mens_outerwear">
+                </a>
+                <h2>Men's Outwear</h2>
+                <a href=""> <button class="shop-button">Shop Now</button></a>
+            </div>
+            <div class="item">
+                <a href="">
+                    <img class="image" src="images/ladies_tshirts.jpg" alt="mens_outerwear">
+                </a>
+                <h2>Men's Outwear</h2>
+                <a href=""> <button class="shop-button">Shop Now</button></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+</body>
+
+</html>
