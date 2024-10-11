@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    font-weight: 300;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop-image {
+    position: relative;
+    margin: 0 32px;
+}
+
+.image {
+    margin: 0 auto;
+    width: 100%;
+    max-height: 100%;
+}
+
+.detail {
+    box-sizing: border-box;
+    margin: 32px 0;
+    padding: 0 24px;
+    width: 100%;
+    max-width: 700px;
+}
+
+h1 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.price {
+    font-size: inherit;
+    margin: 12px 0 32px;
+    color: #757575;
+}
+
+.pickers {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid #ccc;
+    font-size: inherit;
+    color: #757575;
+}
+
+.size-label {
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    color: #757575;
+    pointer-events: none;
+}
+
+.quantity-label {
+    position: absolute;
+    top: 65px;
+    left: 0px;
+    color: #757575;
+    pointer-events: none;
+}
+
+.shop-select>select {
+    line-height: 16px;
+    font-size: 16px;
+    width: 100%;
+    padding: 16px 24px 16px 86px;
+    border: none;
+    background-color: transparent;
+    border-radius: 0;
+    font-weight: 300;
+    color: black;
+    overflow: hidden;
+    margin: 0;
+    outline: 0;
+}
+
+.description {
+    color: #757575;
+    margin: 32px 0;
+}
+
+.description>h2 {
+    margin: 16px 0;
+    color: #000;
+    font-size: 18px;
+}
+
+.description>p {
+    margin: 0;
+    color: #757575;
+}
+
+.features {
+    margin: 13px 0;
+    padding-left: 36px;
+}
+
+.cart-button {
+    display: inline-block;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+button {
+    bottom: 0;
+    background-color: #172c50;
+    border: none;
+    font-size: 20px;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+    .detail button {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .shop-image {
+        position: relative;
+        margin: 32px 0px;
+        width: 50%;
+        max-width: 600px;
+    }
+
+    .image {
+        height: 100%;
+    }
+
+    .detail {
+        margin: 64px 0px;
+        width: 50%;
+        max-width: 600px;
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .price {
+        margin: 16px 0 40px;
+        font-size: 16px;
+    }
+
+    .cart-button {
+        display: none;
+    }
+
+    .detail button {
+        border: 2px solid #000;
+        background-color: #fff;
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        color: black;
+        padding: 8px 44px;
+        width: 40%;
+    }
+
+}
