@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    padding: 16px;
+}
+
+.checkout {
+    text-align: center;
+}
+
+.checkout-text {
+    color: black;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.checkout-subtext {
+    color: #6c757d;
+    font-size: 12px;
+}
+
+.container h2 {
+    margin-bottom: 16px;
+    color: black;
+    font-size: 13.6px;
+}
+
+.input-label {
+    z-index: -1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 64px;
+}
+
+.informtion {
+    margin-left: 16px;
+    margin-right: 8px;
+}
+
+.input-label input {
+    border: 0;
+    border-bottom: 1px solid #6c757d;
+    outline: none;
+    padding: 8px;
+    width: 100%;
+}
+
+.input-label label {
+    position: absolute;
+    color: #6c757d;
+    left: 0;
+    font-size: 12px;
+}
+
+.account-info {
+    margin-top: 16px;
+}
+
+.country {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.shipping-add {
+    margin-top: 16px;
+}
+
+.shipping-add input {
+    border: 0;
+    border-bottom: 0.5px solid #6c757d;
+    padding: 16px;
+}
+
+.state-pin {
+    display: flex;
+}
+
+#state {
+    width: 80%;
+}
+
+.state {
+    width: 50%;
+}
+
+.zip-code {
+    width: 50%;
+}
+
+#country {
+    margin-top: 16px;
+    width: 100%;
+    border: 0;
+    background-color: white;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+.billing h2 {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.payment-method h2 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+#card-holder {
+    width: 100%;
+    border: 0;
+    border-bottom: 0.5px solid #6c757d;
+    padding: 16px;
+}
+
+#card-no {
+    width: 100%;
+    border: 0;
+    border-bottom: 0.5px solid #6c757d;
+    padding: 16px;
+}
+
+.expiry-date {
+    margin-top: 11.2px;
+    margin-bottom: 11.2px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 64px;
+}
+
+.month {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.year {
+    display: flex;
+    width: 33%;
+}
+
+.cvv-num {
+    display: flex;
+    bottom: -15.36px;
+    width: 33%;
+}
+
+#expiry[name="expiry-month"] {
+    width: 90%;
+    border: 0;
+    background-color: white;
+    border-bottom: 1px solid #6c757d;
+    padding: 8px;
+}
+
+#expiry[name="expiry-year"] {
+    width: 90%;
+    border: 0;
+    background-color: white;
+    border-bottom: 1px solid #6c757d;
+    padding: 8px;
+}
+
+#cvv {
+    width: 90%;
+    border: 0;
+    background-color: white;
+    border-bottom: 1px solid #6c757d;
+    padding: 8px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-name,
+.item-price {
+    font-size: 12.8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.eachitem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary h2 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.eachitem {
+    display: flex;
+    justify-content: space-between;
+    color: #6c757d;
+}
+
+.total-amount {
+    font-size: 12.8px;
+    margin-top: 24px;
+}
+
+.cart-button {
+    display: inline-block;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+.cart-button button,
+.cart-button a {
+    text-decoration: none;
+    bottom: 0;
+    background-color: #172c50;
+    border: none;
+    font-size: 24px;
+    width: 100%;
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+    .checkout-box button {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .informtion {
+        display: flex;
+        margin: 48px auto 0 auto;
+    }
+
+    .person-details {
+        width: 48%;
+    }
+
+    .checked-display {
+        display: flex;
+        opacity: 1;
+    }
+
+    .payment-desc {
+        margin-left: 80px;
+        width: 52%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .account-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shipping-add {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .payment-method {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .payment-method h2 {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .cart-button {
+        display: none;
+    }
+
+    .order-item button {
+        border: 2px solid #000;
+        background-color: #fff;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        font-weight: 500;
+        color: black;
+        padding: 8px 44px;
+        width: auto;
+    }
+
+    .order-item a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+    }
+}
