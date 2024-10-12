@@ -32,6 +32,7 @@ body {
 }
 
 .nav a {
+    letter-spacing: 5px;
     text-decoration: none;
     color: black;
 }
@@ -156,7 +157,7 @@ img {
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
     .menu-button {
         display: none;
     }
@@ -169,6 +170,11 @@ img {
         font-size: 16px;
         font-weight: 500;
 
+    }
+
+    .nav a {
+        font-size: 20px;
+        letter-spacing: 5px;
     }
 
     .nav-link {
