@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/089e44eff7.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="cart.css">
+    <title>Your-cart</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <ul>
+                    <li onclick=showSidebar()> <i class="fa-solid fa-bars menu-button"></i></li>
+                    <li><a href="index.html"><span>SHOP</span></li></a>
+                    <li>
+                        <div class="cart-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="subscript">1</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <nav>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar() class="cross-bar"><i class="fa-solid fa-xmark"></i></li>
+                    <li><a href="men's-outwear.html">Men's Outerwear</a></li>
+                    <li><a href="men's-outwear.html">Ladies OuterWear</a></li>
+                    <li><a href="men's-outwear.html">Men's T-Shirts</a></li>
+                    <li><a href="men's-outwear.html">Ladies T-shirts</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="item-section">
+            <div class="item-header">
+                <h1>Your Cart</h1>
+                <span>(1 item)</span>
+            </div>
+            <div class="item-container">
+                <a href="details.html">
+                    <img src="data/images/10-14160B.jpg" alt="Grey Heather Fleece Zip Hoodie" class="item-image">
+                </a>
+                <div class="product-detail">
+                    <div class="name">
+                        <a href="details.html">Grey Heather Fleece Zip Hoodie</a>
+                    </div>
+                    <div class="detail">
+                        <div class="quantity">
+                            <label for="quantitySelect">Qty:</label>
+                            <select id="quantitySelect" aria-label="Change quantity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="size">Size: <span>M</span></div>
+                        <div class="price">$50.00</div>
+                    </div>
+                    <button class="delete-button"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+
+            </div>
+            <div class="checkout-box">
+                Total: <span class="subtotal">$50.20</span>
+                <button>
+                    <a href="checkout.html">Checkout</a>
+                </button>
+            </div>
+        </div>
+        <div class="cart-button"><button><a href="checkout.html">Checkout</a></button></div>
+    </div>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+</body>
+
+</html>
