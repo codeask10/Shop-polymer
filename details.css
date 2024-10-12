@@ -114,7 +114,9 @@ h1 {
     width: 100%;
 }
 
-button {
+button,
+.cart-button a {
+    text-decoration: none;
     bottom: 0;
     background-color: #172c50;
     border: none;
@@ -179,6 +181,12 @@ button {
         color: black;
         padding: 8px 44px;
         width: 40%;
+    }
+
+    .detail a {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
     }
 
 }
