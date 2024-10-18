@@ -59,13 +59,13 @@ p {
 .price {
     color: black;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 10px 32px 10px;
     padding: 0;
     list-style: none;
@@ -82,7 +82,7 @@ p {
     max-width: 50%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .mens-item img {
         display: none;
     }
@@ -100,7 +100,7 @@ p {
     }
 
     .title {
-        margin-top: 20%;
+        margin-top: 8%;
     }
 
 }
